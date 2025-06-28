@@ -21,6 +21,8 @@ Permitir que las personas puedan sumarse a partidos de fútbol cuando quieran a 
    ```bash
    npm start
    ```
-3. Abrir `frontend/index.html` en el navegador.
+3. Abrir `frontend/index.html` en el navegador. La interfaz muestra un diseño
+   que simula una cancha de fútbol para que te sientas en el partido desde el
+   primer momento.
 
 Este es solo un punto de partida que se puede expandir con autenticación, base de datos y una aplicación móvil (por ejemplo usando React Native).

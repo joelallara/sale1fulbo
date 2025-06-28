@@ -5,23 +5,75 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sale1fulbo</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 1em; }
-    .match { border: 1px solid #ccc; padding: 0.5em; margin: 0.5em 0; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: repeating-linear-gradient(
+        90deg,
+        #0b6623,
+        #0b6623 50px,
+        #0a7f30 50px,
+        #0a7f30 100px
+      );
+      color: #fff;
+    }
+    h1 {
+      margin-top: 1em;
+      text-shadow: 0 0 5px #000;
+    }
+    .container {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 1em;
+      margin-top: 1em;
+      border-radius: 8px;
+      width: 90%;
+      max-width: 600px;
+    }
+    .match {
+      border: 1px solid #ccc;
+      padding: 0.5em;
+      margin: 0.5em 0;
+      background: #fff;
+      color: #000;
+    }
+    input, button {
+      padding: 0.5em;
+      margin: 0.2em 0;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    button {
+      background: #007bff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #0056b3;
+    }
     @media (max-width: 600px) {
       body { font-size: 18px; }
     }
   </style>
 </head>
 <body>
-  <h1>Partidos</h1>
-  <div id="match-list"></div>
+  <h1>Sale1fulbo</h1>
+  <div class="container">
+    <h2>Partidos</h2>
+    <div id="match-list"></div>
 
-  <h2>Crear partido</h2>
-  <form id="match-form">
-    <input type="text" id="name" placeholder="Nombre del partido" required />
-    <input type="text" id="field" placeholder="Cancha" required />
-    <button type="submit">Crear</button>
-  </form>
+    <h2>Crear partido</h2>
+    <form id="match-form">
+      <input type="text" id="name" placeholder="Nombre del partido" required />
+      <input type="text" id="field" placeholder="Cancha" required />
+      <button type="submit">Crear</button>
+    </form>
+  </div>
 
   <script>
     async function loadMatches() {
