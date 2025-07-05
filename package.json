@@ -1,0 +1,12 @@
+{
+  "name": "sale1fulbo",
+  "version": "0.1.0",
+  "description": "Organizador de partidos de fútbol",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
